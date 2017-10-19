@@ -1,7 +1,7 @@
 {
   "name": "ncurses-css",
   "version": "1.0.0",
-  "description": "",
+  "description": "CSS library which turns web pages into oldschool text-based UI applications.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/poerror/ncurses-css/issues"
   },
-  "homepage": "https://github.com/poerror/ncurses-css#readme"
+  "homepage": "https://github.com/poerror/ncurses-css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }
