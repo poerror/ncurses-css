@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'reset';
+@import 'mixins';
 
 .backtitle {
   color: #68fdfe;
@@ -24,23 +25,11 @@
     border-left: 1px solid #ffffff;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      border-width: 1px 2px 0px;
-      border-style: solid;
-      border-color: #000000;
+      @include border-top-right(-1px, -1px, #000);
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: -1px;
-      border-width: 1px 2px 0px;
-      border-style: solid;
-      border-color: #ffffff;
+      @include border-bottom-left(-1px, -1px, #fff);
     }
   } // .content
 
@@ -61,13 +50,7 @@
     text-align: center;
 
     &::before {
-      content: "";
-      position: absolute;
-      top: -1px;
-      right: -1px;
-      border-width: 1px 2px 0px;
-      border-style: solid;
-      border-color: #000000;
+      @include border-top-right(-1px, -1px, #000);
     }
 
     .btn {

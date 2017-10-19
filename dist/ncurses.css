@@ -40,7 +40,7 @@ p {
       right: -1px;
       border-width: 1px 2px 0px;
       border-style: solid;
-      border-color: #000000; }
+      border-color: #000; }
     .box .content::after {
       content: "";
       position: absolute;
@@ -48,7 +48,7 @@ p {
       left: -1px;
       border-width: 1px 2px 0px;
       border-style: solid;
-      border-color: #ffffff; }
+      border-color: #fff; }
   .box .title {
     position: absolute;
     top: -8px;
@@ -69,7 +69,7 @@ p {
       right: -1px;
       border-width: 1px 2px 0px;
       border-style: solid;
-      border-color: #000000; }
+      border-color: #000; }
     .box .buttons .btn {
       color: #686868; }
       .box .buttons .btn:hover, .box .buttons .btn.active {
