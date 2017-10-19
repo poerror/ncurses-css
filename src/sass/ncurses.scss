@@ -1,0 +1,95 @@
+$background-color: #0a2fc4;
+$font-family: Courier new, Courier, Monaco;
+$font-size: 14px;
+$font-color: #fff;
+
+@import 'reset';
+
+.backtitle {
+  color: #68fdfe;
+  border-bottom: 1px solid #68fdfe;
+  margin: 10px 0;
+}
+
+.box {
+  color: #000000;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  background-color: #c7c7c7;
+  box-shadow: 15px 15px 0px #000000;
+
+  .content {
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      border-width: 1px 2px 0px;
+      border-style: solid;
+      border-color: #000000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      border-width: 1px 2px 0px;
+      border-style: solid;
+      border-color: #ffffff;
+    }
+  } // .content
+
+  .title {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #c7c7c7;
+    color: #6a76fb;
+  }
+
+  .buttons {
+    position: relative;
+    margin: 10px -10px 0;
+    padding: 10px 10px 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      border-width: 1px 2px 0px;
+      border-style: solid;
+      border-color: #000000;
+    }
+
+    .btn {
+      color: #686868;
+
+      &:hover,
+      &.active {
+        background-color: #0a2fc4;
+        color: #ffffff;
+      }
+
+      &::before {
+        content: "\003c\0000a0";
+      }
+
+      &::after {
+        content: "\0000a0\003e";
+      }
+    } // .btn
+  } // .buttons
+} // .box
