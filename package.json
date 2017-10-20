@@ -1,7 +1,7 @@
 {
   "name": "ncurses-css",
   "version": "1.0.0",
-  "description": "CSS library which turns web pages into oldschool text-based UI applications.",
+  "description": "CSS which turns web pages into oldschool text-based UI applications.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
