@@ -79,3 +79,43 @@ p {
         content: "\003c\0000a0"; }
       .box .buttons .btn::after {
         content: "\0000a0\003e"; }
+  .box ul.menu {
+    position: relative;
+    list-style: none;
+    counter-reset: section;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #ffffff;
+    margin-bottom: 70px; }
+    .box ul.menu::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      border-width: 1px 2px 0px;
+      border-style: solid;
+      border-color: #fff; }
+    .box ul.menu::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: -1px;
+      border-width: 1px 2px 0px;
+      border-style: solid;
+      border-color: #000; }
+    .box ul.menu li a {
+      margin-left: 20px;
+      color: #000000; }
+    .box ul.menu li.active a, .box ul.menu li a:hover {
+      background-color: #0a2fc4;
+      color: #ffffff; }
+    .box ul.menu li::before {
+      position: absolute;
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      color: #c71e14; }
+    .box ul.menu li.active::before, .box ul.menu li:hover::before {
+      background-color: #0a2fc4;
+      color: #fd6f6b; }
